@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px black;
+  width: 600px;
+  margin:auto;
+
+  .title{
+    background-color: green;
+    font-size: 25px;
+    color: white;
+  }
+
+  .themeToggleIcon{
+    margin: auto 0;
+    font-size: 40px;
+    background-color: yellow;
+    color: white;
+    cursor: pointer;
+  }
+
+}

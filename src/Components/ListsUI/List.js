@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { onEditMode, onRemoveItem, onTuskIsDone } from "../../Redux/Main-container/ListsReducer";
+import styles from "./List.module.scss"
 
 
 
@@ -34,18 +35,18 @@ const List = (props) => {
 
 
   return(
-    <div>
-      <div>
+    <div className={styles.list}>
+      <div className={styles.checkToggle}>
         {props.isDone ? <span onClick={tuskIsDone} >✔️</span> : <span onClick={tuskIsDone}>❌</span>}
       </div>
-      <div>
+      <div className={styles.todoText}>
         {editing ? <input placeholder={props.text} value={editInputValue} onChange={onEditModeInputChange} /> : <h3>{props.text}</h3>
  } 
       </div>
-      <div>
+      <div className={styles.editMode}>
         <span onClick={handleStartEditing}>✏️</span>
       </div>
-      <div>
+      <div className={styles.todoRemove}>
         <span onClick={removeItem}>🚫</span>
       </div>
     </div>

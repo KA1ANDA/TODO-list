@@ -2,6 +2,7 @@ import Header from './Components/HeaderUI/Header';
 import Input from './Components/InputUI/Input';
 import Lists from './Components/ListsUI/Lists';
 import Navbar from './Components/NavbarUI/Navbar';
+import styles from './app.module.scss';
 
 
 
@@ -9,7 +10,7 @@ import Navbar from './Components/NavbarUI/Navbar';
 const App = () =>  {
   
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Header />
       <Input />
       <Lists />

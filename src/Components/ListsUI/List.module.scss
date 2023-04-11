@@ -1,0 +1,33 @@
+.list {
+  display: flex;
+  background-color: purple;
+  width: 604px;
+  margin:auto;
+  border-bottom: solid 1px white;
+
+    .checkToggle{
+      background-color: red;
+      margin:auto;
+      align-self: flex-start;
+      
+    }
+
+    .todoText{
+      background-color: red;
+      margin:auto;
+      align-self: flex-start;
+    }
+
+
+    .editMode{
+      background-color: red;
+      margin:auto;
+      align-self: flex-end;
+    }
+
+    .todoRemove{
+      background-color: red;
+      margin:auto;
+      align-self: flex-end;
+    }
+}
