@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Prompt:wght@500&display=swap');
+
+
 .header {
   display: flex;
   justify-content: space-between;
-  border: solid 2px black;
   width: 600px;
   margin:auto;
+  padding-bottom: 20px;
 
   .title{
-    background-color: green;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
     color: white;
+    font-family: 'Prompt', sans-serif;
   }
 
   .themeToggleIcon{
     margin: auto 0;
     font-size: 40px;
-    background-color: yellow;
     color: white;
     cursor: pointer;
   }

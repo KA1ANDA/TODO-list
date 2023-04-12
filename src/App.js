@@ -11,10 +11,12 @@ const App = () =>  {
   
   return (
     <div className={styles.app}>
-      <Header />
+      <Header/>
       <Input />
-      <Lists />
-      <Navbar />
+      <div className={styles.shadowBox}>
+        <Lists />
+        <Navbar />
+      </div>
     </div>
   );
 }

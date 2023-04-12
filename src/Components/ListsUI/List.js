@@ -37,7 +37,7 @@ const List = (props) => {
   return(
     <div className={styles.list}>
       <div className={styles.checkToggle}>
-        {props.isDone ? <span onClick={tuskIsDone} >✔️</span> : <span onClick={tuskIsDone}>❌</span>}
+        {props.isDone ? <span onClick={tuskIsDone} >✔</span> : <span className={styles.notChecked} onClick={tuskIsDone}> </span>}
       </div>
       <div className={styles.todoText}>
         {editing ? <input placeholder={props.text} value={editInputValue} onChange={onEditModeInputChange} /> : <h3>{props.text}</h3>

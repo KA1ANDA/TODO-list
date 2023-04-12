@@ -1,5 +1,19 @@
 .app {
-  margin: 0px;
-  background-color: darkgrey;
-  height: 100vh;
+  position: relative;
+  bottom: 300px;
+  z-index:99;
+  margin:auto;
+  width:fit-content;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+
+    .shadowBox{
+      // box-shadow: 0px 12px 19px -2px rgba(0,0,0,0.48);
+      // box-shadow: 0px 9px 32px -6px rgba(0,0,0,0.48);
+      // box-shadow: -4px 0px 19px 4px rgba(0,0,0,0.56);
+      box-shadow: 0px 13px 15px 9px rgba(0,0,0,0.1);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
 }

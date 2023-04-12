@@ -1,0 +1,28 @@
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  width: 604px;
+  margin: auto;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+
+
+
+    .categories{
+      display: flex;
+    }
+    .all{
+      margin: 0 10px;
+    }
+
+    .active{
+      margin: 0 10px;
+    }
+
+    .completed{
+      margin: 0 10px;
+    }
+
+}
