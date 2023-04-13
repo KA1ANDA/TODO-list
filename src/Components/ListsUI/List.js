@@ -6,6 +6,7 @@ import styles from "./List.module.scss"
 
 
 
+
 const List = (props) => {
   //LOCAL STATE
   const [editing, setEditing] = useState(false);
@@ -36,10 +37,10 @@ const List = (props) => {
 
   return(
     <div className={styles.list}>
-      <div className={styles.checkToggle}>
-        {props.isDone ? <span onClick={tuskIsDone} >✔</span> : <span className={styles.notChecked} onClick={tuskIsDone}> </span>}
+      <div  onClick={tuskIsDone} className={styles.checkToggle}>
+        {props.isDone ? <span >✔</span> : <span className={styles.notChecked}> </span>}
       </div>
-      <div className={styles.todoText}>
+      <div className={props.isDone ? styles.todoIsDone : styles.todoText}>
         {editing ? <input placeholder={props.text} value={editInputValue} onChange={onEditModeInputChange} /> : <h3>{props.text}</h3>
  } 
       </div>

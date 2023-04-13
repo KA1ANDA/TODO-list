@@ -1,3 +1,13 @@
+@mixin categories (){
+  margin: 0 10px;
+  cursor: pointer;
+    &:hover{
+      color: blue;
+    }
+        
+}
+
+
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -13,16 +23,28 @@
     .categories{
       display: flex;
     }
+
     .all{
-      margin: 0 10px;
+      @include categories();
     }
 
     .active{
-      margin: 0 10px;
+      @include categories();
     }
 
     .completed{
-      margin: 0 10px;
+      @include categories();
     }
 
+    .clearChecked{
+      cursor: pointer;
+
+      &:hover{
+        color: blue;
+      }
+    }
+
+    .currentCategory{
+      color: blue;
+    }
 }

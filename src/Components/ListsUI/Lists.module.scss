@@ -1,4 +1,30 @@
 .listsWrapper{
   width: fit-content;
   margin:auto;
+
+    .waitingForTodo{
+      display:inline-block;
+      background-color: white;
+      height: 250px;
+      width: 604px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom: 1px solid silver;
+
+        .loader{
+          background-image:url(./../../../public/imgs/loader.gif);
+          background-size: cover;
+          width: 150px;
+          height: 150px;
+          margin: auto;
+        }
+
+
+        .loaderTitle{
+          // width:fit-content;
+          text-align: center;
+          background-color: lightskyblue;
+          margin: 20px auto;
+        }
+    }
 }
