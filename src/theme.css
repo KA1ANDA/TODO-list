@@ -1,0 +1,58 @@
+/* // .theme{
+//     $lightMode{
+//     $main-background-color:white;
+//     $list-background-color:white;
+//     $text-color:black;
+//     $background-image:url(./../public/imgs/bg.png);
+//   } @else{
+//     $main-background-color:#191822;
+//     $list-background-color:#353348;
+//     $text-color:white;
+//     $background-image:url(./../public/imgs/bg.png);
+//   }
+// }
+
+
+
+.theme{
+  &.lightMode{
+    $main-background-color:white;
+    $list-background-color:white;
+    $text-color:black;
+    $background-image:url(./../public/imgs/bg.png);
+  }
+}
+
+
+.theme{
+  &.darkMode{
+    $main-background-color:#191822;
+    $list-background-color:#353348;
+    $text-color:white;
+    $background-image:url(./../public/imgs/bg.png);
+  }
+}
+
+ */
+
+ :root{
+  /* lightmode */
+  --mainBackground-color-light:white;
+  --itemsBackground-color-light:white;
+  --background-image-light:url("./../public/imgs/bg.png");
+  --font-color-light:black;
+  
+
+  /* darkmode */
+  --mainBackground-color-dark:#1a1825;
+  --itemsBackground-color-dark:#27273F;
+  --background-image-dark:url("./../public/imgs/dark-theme-img1.png");
+  --font-color-dark:white;
+
+
+
+  --mainBackground-color:var(--mainBackground-color-light);
+  --itemsBackground-color:var(--itemsBackground-color-light);
+  --background-image:var(--background-image-light);
+  --font-color:var(--font-color-light);
+ }

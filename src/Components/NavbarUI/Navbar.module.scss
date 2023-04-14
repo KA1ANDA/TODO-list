@@ -1,8 +1,10 @@
+
+
 @mixin categories (){
   margin: 0 10px;
   cursor: pointer;
     &:hover{
-      color: blue;
+      color: #5765FF;
     }
         
 }
@@ -16,7 +18,9 @@
   position: relative;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: white;
+  background-color: var(--itemsBackground-color);
+  color:grey;
+  transition:0.8s;
 
 
 
@@ -40,11 +44,11 @@
       cursor: pointer;
 
       &:hover{
-        color: blue;
+        color: #5765FF;
       }
     }
 
     .currentCategory{
-      color: blue;
+      color: #5765FF;
     }
 }

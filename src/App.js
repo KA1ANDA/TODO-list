@@ -7,17 +7,21 @@ import styles from './app.module.scss';
 
 
 
+
 const App = () =>  {
-  
+
+
   return (
-    <div className={styles.app}>
-      <Header/>
-      <Input />
-      <div className={styles.shadowBox}>
-        <Lists />
-        <Navbar />
+   <div>
+      <div className={styles.app}>
+        <Header/>
+        <Input />
+        <div className={styles.shadowBox}>
+          <Lists />
+          <Navbar />
+        </div>
       </div>
-    </div>
+   </div>
   );
 }
 

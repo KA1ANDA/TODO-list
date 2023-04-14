@@ -1,15 +1,17 @@
+
 .listsWrapper{
   width: fit-content;
   margin:auto;
 
     .waitingForTodo{
       display:inline-block;
-      background-color: white;
+      background-color: var(--itemsBackground-color);
       height: 250px;
       width: 604px;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
-      border-bottom: 1px solid silver;
+      border-bottom: 1px solid #3B3B58;
+      transition:0.8s;
 
         .loader{
           background-image:url(./../../../public/imgs/loader.gif);
@@ -22,8 +24,8 @@
 
         .loaderTitle{
           // width:fit-content;
+          color:  var(--font-color);
           text-align: center;
-          background-color: lightskyblue;
           margin: 20px auto;
         }
     }

@@ -1,16 +1,32 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {switchLightMode} from "../../Redux/HeaderBLL/HeaderReducer";
+import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss"
 
 
 
 const Header = (props) => {
+  // STATE
+  const [theme,setTheme] = useState('light')
 
-  const lightMode = useSelector (state => state.header.lightMode)
-  const dispatch = useDispatch ()
+  const toggleTheme = () => {
+    setTheme(theme==='light' ? 'dark' :'light')
+  }
 
-  const toggleLightMode = () => dispatch(switchLightMode())
+
+
+  useEffect(() => {
+    const mainBackgroundColor = `var(--mainBackground-color-${theme})`
+    const itemsBackgroundColor = `var(--itemsBackground-color-${theme})`
+    const backgroundImage = `var(--background-image-${theme})`
+    const fontColor = `var(--font-color-${theme})`
+
+    document.body.style.setProperty('--mainBackground-color', mainBackgroundColor)
+    document.body.style.setProperty('--itemsBackground-color', itemsBackgroundColor)
+    document.body.style.setProperty('--background-image', backgroundImage)
+    document.body.style.setProperty('--font-color', fontColor)
+  },[theme])
+
+
+
 
   return (
     <div className={styles.header}>
@@ -18,7 +34,7 @@ const Header = (props) => {
         <h2>T O D O</h2>
       </div>
       <div className = {styles.themeToggleIcon}>
-        {lightMode ? <span onClick={toggleLightMode}>🌙</span> : <span onClick={toggleLightMode}>☀️</span>}
+        {theme === 'light' ? <span onClick={toggleTheme}>🌙</span> : <span onClick={toggleTheme}>☀️</span>}
       </div>
     </div>
   )

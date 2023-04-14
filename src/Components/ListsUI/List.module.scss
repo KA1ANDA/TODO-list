@@ -1,3 +1,5 @@
+
+
 @mixin todoIsDone {
   max-width: 380px;
   overflow: hidden;
@@ -12,12 +14,14 @@
 .list {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color:  var(--itemsBackground-color);
   width: 604px;
   height: 75px;
   margin:auto;
-  border-bottom: solid 1px lightgrey;
+  border-bottom: solid 1px #3B3B58;
   position: relative;
+  transition:0.8s;
+
   
 
     &:first-child{
@@ -43,9 +47,10 @@
           width: 30px;
           height: 30px;
           border-radius: 50%;
-          background-color: white;
+          background-color: var(--itemsBackground-color);
           box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.1);
           border:1px solid silver;
+          transition:0.8s;
         }
     }
 
@@ -54,6 +59,7 @@
       overflow: hidden;
       margin-left: 40px;
       overflow-wrap: break-word;
+      color: var(--font-color);
     }
 
 
