@@ -40,13 +40,15 @@
   --mainBackground-color-light:white;
   --itemsBackground-color-light:white;
   --background-image-light:url("./../public/imgs/bg.png");
+  --loader-gif-light:url("./../public/imgs/loader.gif");
   --font-color-light:black;
   
 
   /* darkmode */
   --mainBackground-color-dark:#1a1825;
-  --itemsBackground-color-dark:#27273F;
+  --itemsBackground-color-dark:#33335c;
   --background-image-dark:url("./../public/imgs/dark-theme-img1.png");
+  --loader-gif-dark:url("./../public/imgs/loader-dark1.gif");
   --font-color-dark:white;
 
 
@@ -54,5 +56,6 @@
   --mainBackground-color:var(--mainBackground-color-light);
   --itemsBackground-color:var(--itemsBackground-color-light);
   --background-image:var(--background-image-light);
+  --loader-gif:var(--loader-gif-light);
   --font-color:var(--font-color-light);
  }

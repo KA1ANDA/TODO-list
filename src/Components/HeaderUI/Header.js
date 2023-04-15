@@ -17,11 +17,13 @@ const Header = (props) => {
     const mainBackgroundColor = `var(--mainBackground-color-${theme})`
     const itemsBackgroundColor = `var(--itemsBackground-color-${theme})`
     const backgroundImage = `var(--background-image-${theme})`
+    const loaderGif = `var(--loader-gif-${theme})`
     const fontColor = `var(--font-color-${theme})`
 
     document.body.style.setProperty('--mainBackground-color', mainBackgroundColor)
     document.body.style.setProperty('--itemsBackground-color', itemsBackgroundColor)
     document.body.style.setProperty('--background-image', backgroundImage)
+    document.body.style.setProperty('--loader-gif', loaderGif)
     document.body.style.setProperty('--font-color', fontColor)
   },[theme])
 

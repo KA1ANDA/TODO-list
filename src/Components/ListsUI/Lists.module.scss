@@ -14,11 +14,14 @@
       transition:0.8s;
 
         .loader{
-          background-image:url(./../../../public/imgs/loader.gif);
+          background-image:var(--loader-gif);
+          border-radius: 50%;
+          background-position: 50% 50%;
           background-size: cover;
           width: 150px;
           height: 150px;
           margin: auto;
+          transition: 0.8s;
         }
 
 
