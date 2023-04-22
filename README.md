@@ -1,6 +1,44 @@
 <<<<<<< HEAD
-# TODO-list
-=======
+# React Redux Todo App
+---
+This is a simple Todo application built using React, Redux, and Sass. The application allows users to add, edit, and delete todo items.
+
+# Features
+
+* Add new todo item
+* Edit existing todo item
+* Mark todo item as completed
+* Delete todo item
+
+# Usage
+
+Once the development server is running, you can access the Todo app by navigating to http://localhost:3000 in your browser.
+
+To add a new todo item, type the task in the input field and press the Enter key 
+
+
+To edit an existing todo item, click the Pencil icon next to the item, make your changes, and press the Pencil icon again to save it.
+
+To mark a todo item as completed, click the checkbox next to the item.
+
+To delete a todo item, click the Delete icon next to the item.
+
+
+# Technologies
+
+This project was built using the following technologies:
+
+* React
+* Redux
+* Sass
+
+
+# App screenshot
+
+![lightMode](./public/imgs/lightmode.png)
+![darkMode](./public/imgs/darkmode.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
