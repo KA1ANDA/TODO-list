@@ -14,6 +14,8 @@
   display: flex;
   justify-content: space-around;
   width: 604px;
+  width: 100%;
+
   margin: auto;
   position: relative;
   border-bottom-left-radius: 5px;
@@ -21,6 +23,8 @@
   background-color: var(--itemsBackground-color);
   color:grey;
   transition:0.8s;
+
+
 
 
 
@@ -51,4 +55,11 @@
     .currentCategory{
       color: #5765FF;
     }
+}
+
+
+@media (max-width:670px){
+  .navbar{
+    font-size: 12px;
+  }
 }

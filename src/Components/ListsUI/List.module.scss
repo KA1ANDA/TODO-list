@@ -1,13 +1,25 @@
 
 
 @mixin todoIsDone {
-  max-width: 380px;
-  overflow: hidden;
-  margin-left: 40px;
-  overflow-wrap: break-word;
-  text-decoration:line-through;
-  color:rgba(180, 174, 174, 0.362);
-  transition: 0.5s;
+  // max-width: 380px;
+  // overflow: hidden;
+  // margin-left: 40px;
+  // overflow-wrap: break-word;
+  // text-decoration:line-through;
+  // color:rgba(180, 174, 174, 0.362);
+  // transition: 0.5s;
+  // background-color: blue;
+
+      width: 380px;
+      overflow: hidden;
+      margin-left: 20px;
+      overflow-wrap: break-word;
+      color: var(--font-color);
+
+
+      @media (max-width:670px){
+        width: 100%;
+      }
 }
 
 
@@ -15,23 +27,26 @@
   display: flex;
   align-items: center;
   background-color:  var(--itemsBackground-color);
-  width: 604px;
-  height: 75px;
+  // width: 604px;
+  width: 100%;
+  // height: 75px;
   margin:auto;
   border-bottom: solid 1px #3B3B58;
   position: relative;
   transition:0.8s;
+  justify-content: space-between;
 
-  
 
     &:first-child{
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
     }
 
+
+
     .checkToggle{
       border-radius: 50%;
-      margin-left: 40px;
+      margin-left: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,6 +56,16 @@
       background: rgb(101,173,246);
       background: linear-gradient(148deg, rgba(101,173,246,1) 34%, rgba(137,85,209,1) 70%);
       cursor: pointer;
+
+        span{
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+
+        }
 
 
         .notChecked{
@@ -55,11 +80,15 @@
     }
 
     .todoText{
-      max-width: 380px;
+      width: 380px;
+
       overflow: hidden;
-      margin-left: 40px;
+      margin-left: 20px;
       overflow-wrap: break-word;
       color: var(--font-color);
+      word-wrap: break-word;
+      word-break: break-all;
+ 
     }
 
 
@@ -73,17 +102,30 @@
         border-radius: 5px;
       }
 
+
+    .editStuff{
+      // width: 50px;
+      // height: 50px;
+      display: flex;
+      // position: absolute;
+      // right: 0;
+      // margin-left: 40px;
+      margin-right: 10px;
+      
+    }
+
     .editMode{
-      position: absolute;
-      right:0;
-      margin: 80px;
+      // position: absolute;
+      // right:0;
+      // margin: 80px;
       cursor: pointer;
     }
 
     .todoRemove{
-      position: absolute;
-      right:0;
-      margin: 40px;
+      // position: absolute;
+      // right:0;
+      // margin: 40px;
+      margin-left: 10px;
       cursor: pointer;
       opacity:30%;
 
@@ -92,4 +134,14 @@
           opacity:100%;
         }
     }
+
+
+    @media (max-width:670px){
+      .todoText{
+        
+        width: 100%;
+
+      }
+    }
 }
+

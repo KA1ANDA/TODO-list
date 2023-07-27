@@ -44,11 +44,13 @@ const List = (props) => {
         {editing ? <input placeholder={props.text} value={editInputValue} onChange={onEditModeInputChange} /> : <h3>{props.text}</h3>
  } 
       </div>
-      <div className={styles.editMode}>
-        <span onClick={handleStartEditing}>✏️</span>
-      </div>
-      <div className={styles.todoRemove}>
-        <span onClick={removeItem}>🚫</span>
+      <div className={styles.editStuff}>
+        <div className={styles.editMode}>
+          <span onClick={handleStartEditing}>✏️</span>
+        </div>
+        <div className={styles.todoRemove}>
+          <span onClick={removeItem}>🚫</span>
+        </div>
       </div>
     </div>
   )
