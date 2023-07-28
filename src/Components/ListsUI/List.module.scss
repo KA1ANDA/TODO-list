@@ -15,6 +15,11 @@
       margin-left: 20px;
       overflow-wrap: break-word;
       color: var(--font-color);
+      text-decoration:line-through;
+      color:rgba(180, 174, 174, 0.362);
+      transition: 0.5s;
+
+
 
 
       @media (max-width:670px){
